@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jules Eats a Camera | Ticket Launch</title>
+    <meta
+      name="description"
+      content="A modern ticket landing page for the internet's funniest high-stakes comment event."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top-rail" id="menu">
+      <a class="rail-link" href="#tickets">Menu</a>
+      <a class="rail-brand" href="#">GET.EXPY</a>
+      <a class="rail-link" href="#contact">Contact Us</a>
+    </header>
+
+    <main class="page">
+      <section class="hero reveal">
+        <p class="micro">Live satire event</p>
+        <h1>
+          JULES NETZER<br />
+          CAMERA DINNER TOUR
+        </h1>
+        <p class="hero-lede">
+          One comment, one suspiciously confident promise, and one crowd ready to
+          <br class="hero-lede-break" />
+          witness either history or a very expensive dental bill.
+        </p>
+
+        <div class="hero-media">
+          <img
+            src="./assets/camera-event.png"
+            alt="Julian humorously biting a video camera on stage"
+          />
+          <div class="hero-stamp">Front row: almost gone. Popcorn: emotionally mandatory.</div>
+        </div>
+      </section>
+
+      <section class="meta-grid reveal" aria-label="Event details and background">
+        <article class="meta-card">
+          <p class="meta-title">Origin</p>
+          <p>Vienna, Austria. One bold sentence. One internet that politely declined to move on.</p>
+        </article>
+
+        <article class="meta-card linkedin-story">
+          <p class="meta-title">Background</p>
+          <p>
+            This started on LinkedIn, where someone wrote, "If Ava made that video, I'm gonna
+            eat a camera." The replies immediately turned into, "Great, where do we buy tickets?"
+          </p>
+        </article>
+
+        <article class="meta-card">
+          <p class="meta-title">Objective</p>
+          <p>
+            Transform comment-section chaos into a polished live event with stage lights, camera
+            safety disclaimers, and premium seating for people who love consequences.
+          </p>
+        </article>
+      </section>
+
+      <section class="manifesto reveal">
+        <p class="section-eyebrow">How it got real</p>
+        <p class="manifesto-copy">
+          He typed one sentence. The internet asked for seats. We built a stage, a schedule, and
+          a checkout flow before common sense could file an appeal.
+        </p>
+        <a class="manifesto-link" href="#tickets">Watch history happen -></a>
+      </section>
+
+      <section id="schedule" class="schedule reveal">
+        <div class="schedule-top">
+          <p class="section-eyebrow">This year's schedule</p>
+          <h2>Do not miss the keynote legal asked us to call "performance art."</h2>
+        </div>
+
+        <div class="schedule-row">
+          <p>
+            <strong>Ground floor</strong>
+            <span>Conference Hall #1</span>
+          </p>
+          <p>
+            <strong>Main event</strong>
+            <span>Camera nibble and crowd commentary</span>
+          </p>
+          <p>
+            <strong>April 18, 2026</strong>
+            <span>19:00 - 21:00 CET</span>
+          </p>
+          <p>
+            <strong>Jules Netzer</strong>
+            <span>Founder, accidental performance artist</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="tickets" class="tickets reveal">
+        <p class="section-eyebrow">Choose ticket and join us</p>
+
+        <div class="ticket-grid">
+          <article class="ticket-card featured" data-tier="Standard" data-price="59">
+            <p class="ticket-name">Standard</p>
+            <ul>
+              <li>Access to the full spectacle</li>
+              <li>Sticker pack + replay for disbelief checks</li>
+              <li>Free coffee and moral support</li>
+            </ul>
+            <p class="ticket-price">$59 per seat</p>
+            <button class="choose-ticket" type="button">Select Standard</button>
+          </article>
+
+          <article class="ticket-card" data-tier="Business" data-price="119">
+            <p class="ticket-name">Business</p>
+            <ul>
+              <li>Everything in Standard</li>
+              <li>Fast-track entry (skip the panic queue)</li>
+              <li>Priority Q&amp;A access for follow-up jokes</li>
+            </ul>
+            <p class="ticket-price">$119 per seat</p>
+            <button class="choose-ticket" type="button">Select Business</button>
+          </article>
+
+          <article class="ticket-card" data-tier="Premium" data-price="199">
+            <p class="ticket-name">Premium*</p>
+            <ul>
+              <li>Everything in Business</li>
+              <li>Closest seats to the "camera zone"</li>
+              <li>Signed "I watched this live" credential</li>
+            </ul>
+            <p class="ticket-price">$199 per seat</p>
+            <button class="choose-ticket" type="button">Select Premium</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="checkout" class="checkout reveal">
+        <div class="amount-wrap">
+          <label for="ticket-qty">Amount</label>
+          <div class="amount-control">
+            <button id="qty-down" type="button" aria-label="Decrease quantity">-</button>
+            <input id="ticket-qty" name="ticket-qty" type="number" min="1" max="8" value="2" />
+            <button id="qty-up" type="button" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="sales-wrap" aria-label="Live purchase activity">
+          <p class="sales-summary">
+            <strong id="sold-count">742</strong>
+            <span>of 1,400 seats sold. LinkedIn is still behaving normally (it is not).</span>
+          </p>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="1400" aria-valuenow="742">
+            <span id="sold-progress" style="width: 53%;"></span>
+          </div>
+          <ul id="purchase-feed" class="purchase-feed" aria-live="polite">
+            <li><span>Maya, Berlin</span><strong>2 x Standard</strong></li>
+            <li><span>Jon, Vienna</span><strong>1 x Premium</strong></li>
+            <li><span>Nora, Zurich</span><strong>3 x Business</strong></li>
+          </ul>
+        </div>
+
+        <form id="ticket-form" class="buy-form">
+          <label class="sr-only" for="ticket-tier">Ticket tier</label>
+          <select id="ticket-tier" name="ticket-tier">
+            <option value="Standard|59">Standard - $59</option>
+            <option value="Business|119">Business - $119</option>
+            <option value="Premium|199">Premium - $199</option>
+          </select>
+
+          <label class="sr-only" for="ticket-email">Email</label>
+          <input
+            id="ticket-email"
+            name="ticket-email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <div class="price-line">
+            <span>Total</span>
+            <strong id="ticket-total">$125.00</strong>
+          </div>
+
+          <button class="buy-btn" type="submit">Buy Ticket -></button>
+          <p id="checkout-message" class="checkout-message" aria-live="polite">
+            Demo checkout only. This parody ticket page is based on a LinkedIn comment, and no
+            cameras were harmed.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <p>Born on LinkedIn, raised by comment chaos. Please do not eat cameras at home.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
